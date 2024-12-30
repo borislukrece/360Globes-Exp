@@ -27,7 +27,7 @@
 1. Clone the repository to your local environment:
 
    ```bash
-   git clone https://github.com/borislukrece/360-globes.git
+   git clone https://github.com/borislukrece/360globes-exp.git
    cd 360-globes
    ```
 
