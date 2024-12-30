@@ -33,13 +33,6 @@
 
 2. Launch a local development server or open the `index.html` file directly in a browser.
 
-3. (Optional) Serve the project using a live server for optimal performance:
-
-   ```bash
-   npm install -g live-server
-   live-server
-   ```
-
 ## Contributing
 
 Contributions to 360 Globes are welcome! To contribute:
