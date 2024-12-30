@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>360 Globes</title>
+        <link rel="stylesheet" href="assets/style.css">
+    </head>
+
+    <body>
+        <main class="w-full full-height relative">
+            <section class="section home-second">
+                <div class="position-relative z-index-5">
+                    <div class="content-container w-screen full-height">
+                        <div
+                            class="w-full full-height flex justify-center items-center backdrop-blur-sm">
+                            <div
+                                class="font-bold text-white/50 shadow current-planet">
+                                Mercure
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="particle-pen">
+                        <div
+                            class="w-full full-height flex justify-center items-center position-absolute z-index-0 wembed horo">
+                            <img src="assets/img/horo.png" alt
+                                class="w-[22rem] h-[22rem] object-contain">
+                        </div>
+
+                        <div
+                            class="w-full h-full flex justify-center items-center relative select-none">
+                            <div class="box vertical shadow-lg shadow-black/80"
+                                style="--ab:0vw; --or:-100vh;"
+                                id="mercure">
+                                <img src="assets/img/mercure.jpeg" alt="Mercury"
+                                    class="h-full w-auto object-cover">
+                            </div>
+                            <div
+                                class="box horizontal shadow-lg shadow-black/80"
+                                style="--ab:-100vw; --or:0vh;" id="venus">
+                                <img src="assets/img/venus.jpeg" alt="Venus"
+                                    class="h-full w-auto object-cover">
+                            </div>
+                            <div
+                                class="box horizontal shadow-lg shadow-black/80"
+                                style="--ab:100vw; --or:0vh;" id="earth">
+                                <img src="assets/img/earth.jpeg" alt="Earth"
+                                    class="h-full w-auto object-cover">
+                            </div>
+                            <div class="box vertical shadow-lg shadow-black/80"
+                                style="--ab:0vw; --or:100vh;" id="mars">
+                                <img src="assets/img/mars.jpg" alt="Mars"
+                                    class="h-full w-auto object-cover">
+                            </div>
+                        </div>
+
+                        <div
+                            class="w-full h-full bg-black/80 flex justify-center items-center absolute top-0 z-[110] hide"
+                            id="scene">
+                            <div class="w-full h-full relative">
+                                <div
+                                    class="w-full h-full flex justify-center items-center"
+                                    id="scene-view"></div>
+                                <div
+                                    class="w-[20%] hidden lg:flex justify-center items-center absolute top-[8rem] left-[2rem]">
+                                    <div class="text-white">
+                                        <h2
+                                            class="displayName font-bold text-md">Earth</h2>
+                                        <ul
+                                            class="my-4 text-sm h-[60vh] describePlanet">
+                                            <li><strong>Distance from the
+                                                    Sun:</strong> Earth is at an
+                                                average distance of about
+                                                149.6 million kilometers (or 1
+                                                astronomical unit) from the
+                                                Sun.</li>
+                                            <li><strong>Orbital Period:</strong>
+                                                Earth completes one orbit around
+                                                the
+                                                Sun in
+                                                approximately 365.25 days,
+                                                defining
+                                                one Earth year.</li>
+                                            <li><strong>Rotation
+                                                    Period:</strong>
+                                                Earth has a rotation period of
+                                                about
+                                                24 hours,
+                                                which defines one complete
+                                                day.</li>
+                                            <li><strong>Diameter:</strong> Earth
+                                                has
+                                                a diameter of approximately
+                                                12,742
+                                                kilometers, making it the
+                                                largest of
+                                                the terrestrial planets.</li>
+                                            <li><strong>Temperature:</strong>
+                                                Earth
+                                                has a moderate climate that
+                                                allows
+                                                for the
+                                                existence of liquid water on its
+                                                surface, with average
+                                                temperatures
+                                                ranging from
+                                                about -50 degrees Celsius to 50
+                                                degrees Celsius.</li>
+                                            <li><strong>Atmosphere:</strong>
+                                                Earth's
+                                                atmosphere primarily consists of
+                                                nitrogen
+                                                and oxygen, providing vital
+                                                support
+                                                for life through the greenhouse
+                                                effect and
+                                                protection from harmful solar
+                                                radiation.</li>
+                                            <li><strong>Geological
+                                                    Features:</strong> Earth's
+                                                surface is characterized by
+                                                various landforms such as
+                                                mountains,
+                                                plains, plateaus, and diverse
+                                                ecosystems
+                                                including oceans, forests, and
+                                                deserts.</li>
+                                            <li><strong>Exploration:</strong>
+                                                Extensive exploration and study
+                                                of
+                                                Earth have been
+                                                conducted through various
+                                                scientific
+                                                disciplines, leading to a
+                                                comprehensive
+                                                understanding of its geology,
+                                                climate, and biodiversity.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="lg:hidden">
+                                    <button type="button" id="btn-info-p-small"
+                                        class="text-white absolute top-10 right-[2rem]">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            fill="currentColor"
+                                            class="bi bi-info-circle-fill w-8 h-8"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2" />
+                                        </svg>
+                                    </button>
+                                    <div id="info-p-small"
+                                        class="w-full absolute top-[6rem] left-0 hidden">
+                                        <div class="text-white">
+                                            <h2
+                                                class="displayName font-bold text-md px-4">Earth</h2>
+                                            <ul
+                                                class="my-2 text-sm h-[60vh] describePlanet">
+                                                <li><strong>Distance from the
+                                                        Sun:</strong> Earth is
+                                                    at an
+                                                    average distance of about
+                                                    149.6 million kilometers (or
+                                                    1
+                                                    astronomical unit) from the
+                                                    Sun.</li>
+                                                <li><strong>Orbital
+                                                        Period:</strong>
+                                                    Earth completes one orbit
+                                                    around
+                                                    the
+                                                    Sun in
+                                                    approximately 365.25 days,
+                                                    defining
+                                                    one Earth year.</li>
+                                                <li><strong>Rotation
+                                                        Period:</strong>
+                                                    Earth has a rotation period
+                                                    of
+                                                    about
+                                                    24 hours,
+                                                    which defines one complete
+                                                    day.</li>
+                                                <li><strong>Diameter:</strong>
+                                                    Earth
+                                                    has
+                                                    a diameter of approximately
+                                                    12,742
+                                                    kilometers, making it the
+                                                    largest of
+                                                    the terrestrial
+                                                    planets.</li>
+                                                <li><strong>Temperature:</strong>
+                                                    Earth
+                                                    has a moderate climate that
+                                                    allows
+                                                    for the
+                                                    existence of liquid water on
+                                                    its
+                                                    surface, with average
+                                                    temperatures
+                                                    ranging from
+                                                    about -50 degrees Celsius to
+                                                    50
+                                                    degrees Celsius.</li>
+                                                <li><strong>Atmosphere:</strong>
+                                                    Earth's
+                                                    atmosphere primarily
+                                                    consists of
+                                                    nitrogen
+                                                    and oxygen, providing vital
+                                                    support
+                                                    for life through the
+                                                    greenhouse
+                                                    effect and
+                                                    protection from harmful
+                                                    solar
+                                                    radiation.</li>
+                                                <li><strong>Geological
+                                                        Features:</strong>
+                                                    Earth's
+                                                    surface is characterized by
+                                                    various landforms such as
+                                                    mountains,
+                                                    plains, plateaus, and
+                                                    diverse
+                                                    ecosystems
+                                                    including oceans, forests,
+                                                    and
+                                                    deserts.</li>
+                                                <li><strong>Exploration:</strong>
+                                                    Extensive exploration and
+                                                    study
+                                                    of
+                                                    Earth have been
+                                                    conducted through various
+                                                    scientific
+                                                    disciplines, leading to a
+                                                    comprehensive
+                                                    understanding of its
+                                                    geology,
+                                                    climate, and
+                                                    biodiversity.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="w-full flex justify-center items-center absolute bottom-[2rem]">
+                                    <nav>
+                                        <ul class="text-white flex">
+                                            <li
+                                                class="mx-4 font-semibold hover:text-white/80 cursor-pointer"
+                                                id="choseMercure">
+                                                Mercure</li>
+                                            <li
+                                                class="mx-4 font-semibold hover:text-white/80 cursor-pointer"
+                                                id="choseVenus">
+                                                Venus</li>
+                                            <li
+                                                class="mx-4 font-semibold hover:text-white/80 cursor-pointer"
+                                                id="choseEarth">
+                                                Earth</li>
+                                            <li
+                                                class="mx-4 font-semibold hover:text-white/80 cursor-pointer"
+                                                id="choseMars">
+                                                Mars</li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="absolute top-4 left-[1rem] text-white z-[100] nav cursor-pointer"
+                    id="btn360">
+                    <div class="flex items-center">
+                        <div class="font-bold mx-2">
+                            360°
+                        </div>
+                        <div>
+                            <img src="assets/img/icons/360.svg" alt
+                                class="w-10 h-10">
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="absolute top-4 right-[1rem] text-white z-[100] nav"
+                    id="navView">
+                    <div>
+                        <button type="button" id="bend">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor"
+                                class="bi bi-view-list" viewBox="0 0 16 16">
+                                <path
+                                    d="M3 4.5h10a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2zm0 1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1H3zM1 2a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 2zm0 12a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 14z" />
+                            </svg>
+                        </button>
+                        <nav class="min-w-[10rem] hidden">
+                            <ul class="flex items-center gap-4 text-center">
+                                <li id="view1">
+                                    Bend
+                                </li>
+                                <li id="view2">
+                                    Reveal
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <div class="full-height loader-container">
+            <div class="loader-content">
+                <div class="loader-content-image z-index-0 wembed horo">
+                    <img src="assets/img/horo.png" alt>
+                </div>
+                <div class="loader"></div>
+            </div>
+        </div>
+
+        <script src="https://cdn.tailwindcss.com">
+    </script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"></script>
+        <script type="module" src="dist/assets/main-Cp3el-p9.js"></script>
+    </body>
+
+</html>
